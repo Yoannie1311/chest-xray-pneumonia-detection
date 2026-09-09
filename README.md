@@ -158,14 +158,28 @@ chest_xray_pneumonia_detection.ipynb
 
 ## Repository Structure
 
+
+## Repository Structure
+
 ```text
 chest-xray-pneumonia-detection/
 
 ├── chest_xray/
+│   └── chest_xray/
+│       ├── train/
+│       ├── test/
+│       └── val/
+│
+├── figures/
+│   ├── model_results.png
+│   ├── pixel_occlusion.png
+│   ├── sample_visualisation.png
+│   ├── superpixel_dropscores.png
+│   └── superpixel_segmentation.png
+│
 ├── chest_xray_pneumonia_detection.ipynb
 ├── README.md
 └── requirements.txt
-```
 
 ---
 
