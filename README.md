@@ -84,17 +84,43 @@ These techniques highlight image regions that most strongly influence the model'
 
 ## Results
 
-After training for five epochs, the model achieved approximately **70% classification accuracy** on the test dataset.
+The trained ResNet50 model successfully classified chest X-ray images into **Normal** and **Pneumonia** categories while demonstrating the use of explainability techniques for interpreting predictions.
 
-Performance was evaluated using:
+### Model Results
 
-- Accuracy
-- Loss
-- Test predictions
-- Occlusion analysis
-- Superpixel visualisations
+![Model Results](figures/model_results.png)
 
-The project demonstrates both deep learning classification and practical explainability techniques for medical image analysis.
+---
+
+### Sample Predictions
+
+Example chest X-ray images used throughout the analysis.
+
+![Sample Visualisation](figures/sample_visualisation.png)
+
+---
+
+### Pixel Occlusion
+
+Pixel occlusion highlights the image regions that most strongly influence the model's predictions.
+
+![Pixel Occlusion](figures/pixel_occlusion.png)
+
+---
+
+### Superpixel Segmentation
+
+Superpixel segmentation groups neighbouring pixels into meaningful regions before evaluating their importance.
+
+![Superpixel Segmentation](figures/superpixel_segmentation.png)
+
+---
+
+### Superpixel Importance
+
+The figure below illustrates the importance ranking of individual superpixels based on their influence on model predictions.
+
+![Superpixel Drop Scores](figures/superpixel_dropscores.png)
 
 ---
 
